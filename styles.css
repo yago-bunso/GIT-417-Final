@@ -50,3 +50,9 @@ table {
 	border-spacing: 0;
 }
 /*--END OF STYLES RESET--*/
+
+header {
+    background-color: #d50032;
+    width: 100%;
+    color: #ffffff
+}
