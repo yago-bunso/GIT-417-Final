@@ -54,5 +54,10 @@ table {
 header {
     background-color: #d50032;
     width: 100%;
-    color: #ffffff
+    color: #ffffff 
+}
+
+#logo img{
+    width: 75px;
+    margin: 0 auto;
 }
