@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Yago">
+  <title>Starbucks</title>
+  <!--Possibly a favicon here-->
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+        <link rel="icon" href="#" type="image/x-icon">
+  <!--CSS link here-->
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<header>
+  <a href="https://www.starbucks.com/"  aria-label="visit the official starbucks website" id="logo"><img src="#" alt="the starbucks logo depicts a siren in white on a green background"></a>
+  <h1>Starbucks</h1>
+  <nav>
+    <h2>Main Navigation</h2><!--this gets hidden in the CSS-->
+    <ul>
+      <li><a href="#">Drinks</a></li>
+      <li><a href="#">Giveaway</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>Featured Festivities</h2>
+    <h3>Caramel Brulée Latte</h3>
+    <p>410 calories, 48g sugar, 14g fat</p>
+    <p>Our signature espresso,
+      steamed milk and rich caramel
+      brulée sauce finished with
+      whipped cream and a supreme
+      topping of even more caramel
+      brulée bits.</p>
+      <!--Insert product image here-->
+      <!--I'm pretty sure these other products deal with using hidden classes and adding or removing them on click?-->
+      <!--Peppermint Hot Chocolate
+      440 calories, 56g sugar, 16g fat
+      A big welcome back to our classic holiday hot chocolate—lovingly made with chocolaty mocha sauce, peppermint-flavored syrup and steamed milk and sweetly topped with whipped cream and dark-chocolate curls.-->
+      <!--Toasted White Chocolate Mocha Frappuccino
+      420 calories, 64g sugar, 16g fat
+      A toasty holiday blend of wonder: Frappuccino® Roast coffee, milk, ice and flavors of caramelized white chocolate with a cheerful topping of whipped cream, festive holiday sugar sparkles and crispy white pearls.-->
+      <!--Starbucks Holiday Blend
+      Notes of Sweet Maple & Herbs
+      Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanced, sweet and toasty blend of bright Latin American beans and rich Sumatran coffee. The blend is specially roasted to highlight the complexity of flavors, creating a full-bodied, vibrant cup every time. Layered notes of sweet maple and herbs balance the rich flavors of this confident cup. 1lb-->
+      <!--Reindeer Cake Pop
+      140 calories, 14g sugar, 7g fat
+      Vanilla cake interior with chocolaty icing, finished with a festive red nose and antlers.
+    -->
+
+    <section>
+      <!--Possibly make this a separate section for the product display buttons-->
+      <!--Going to try to see how figures work in this section-->
+      <h2>Products</h2><!--this gets hidden in the CSS-->
+      <figure id="one">
+        <img src="#" alt="Caramel
+        Brulée Latte">
+        <figcaption>Caramel
+          Brulée Latte</figcaption>
+        </figure>
+
+        <figure id="two">
+          <img src="#" alt="Peppermint
+          Hot Chocolate">
+          <figcaption>Peppermint
+            Hot Chocolate</figcaption>
+          </figure>
+
+
+          <figure id="three">
+            <img src="#" alt="Toasted White
+            Mocha Frappuccino">
+            <figcaption>Toasted White
+              Mocha Frappuccino</figcaption>
+            </figure>
+
+
+            <figure id="four">
+              <img src="#" alt="Holiday Blend">
+              <figcaption>Holiday Blend </figcaption>
+            </figure>
+
+            <figure id="five">
+              <img src="#" alt="Reindeer
+              Cake Pop">
+              <figcaption>Reindeer
+                Cake Pop</figcaption>
+              </figure>
+
+            </section>
+          </section>
+          <section>
+            <h2>GIVEAWAY</h2>
+            <p>We re feeling generous this holidaC
+              season! Guess the number we re
+              thinking of, and Cou ll get a free drink
+              from us!</p>
+
+              <form>
+                <label for="num1">Enter a number between 1 - 10:</label>
+                <input type="number" name="num1" id="num1">
+                <input type="submit" id="mySubmit">
+              </form>
+              <!--Place an input field here-->
+              <!--Make this a submit button-->
+
+              <b><p>Yay! Congrats! You've just won a free
+                drink of your choice!</b></p>
+
+
+                <p>Please log into Cour Starbucks account
+                  to redeem this offer!</p>
+                  <!--How do you format uls again?-->
+                  <p>How to play:</p>
+                  <ul>
+                  <li>In the textbox, type in a number
+                  1-10.</li>
+                  <li>This website will generate a
+                  random number.</li>
+                  <li>If the number you typed in matches
+                  the number the website was
+                  thinking of, you win!</li>
+                  <li>A Starbucks Rewards account is
+                  required to redeem the free drink.</li>
+                  </ul>
+                </section>
+                <section>
+                  <h2>CONTACT US</h2>
+
+                  <form>
+                    <label for="myName">Full Name<span class="required">*</span></label>
+                    <input type="text" name="myName" id="myName" autocomplete="name" required>
+
+                    <!--Depending on user's contact method preference, email or phone will be required-->
+
+                    <label for="myPhone">Phone<span class="required">*</span></label>
+                    <input type="tel" name="myPhone" id="myPhone" autocomplete="tel" required>
+
+                    <label for="myEmail">Email<span class="required">*</span></label>
+                    <input type="email" name="myEmail" id="myEmail" autocomplete="email" required>
+
+                    <fieldset>
+                      <legend>Preffered Contact Method<span class="required">*</span></legend>
+                      <input type="radio" name="contactPref" id="prefPhone" required checked>
+
+                      <label for="prefPhone">Phone</label>
+                      <input type="radio" name="contactPref" id="prefEmail" required>
+                      <label for="prefEmail">Email</label>
+                    </fieldset>
+                    <label for="message">Comments<span class="required">*</span></label>
+                    <textarea required></textarea>
+                    <input type="submit" name="mySubmit" id="mySubmit">
+                  </form>
+
+
+                  <!--Insert clickable social media icons here-->
+                  <a href="https://www.instagram.com/starbucks/"  aria-label="visit the official starbucks instagram" id="logo"><img src="#" alt="the instagram logo has a simplified monogram of an old fashioned polaroid camera"></a>
+                  <a href="https://www.facebook.com/Starbucks/"  aria-label="visit the official starbucks instagram" id="logo"><img src="#" alt="the facebook logo is a lowercase letter f in facebooks typography"></a>
+                  <a href="https://open.spotify.com/user/starbucks"  aria-label="listen to what we play in our cafes" id="logo"><img src="#" alt="the spotify logo contains three wavelengths to symbolize sound"></a>
+
+                  <p>We love to hear feedback from our
+                    customers.<br>
+
+
+                    If you have any questions, please see
+                    our FAQs page to find out if your
+                    inquiry can be answered as soon as
+                    possible.<br>
+
+
+                    Other than that, we're glad to be of
+                    service to you.
+                  </p>
+                  <!--Insert Starbucks app image here-->
+
+                  <p>Collect stars and earn rewards.<br>
+                    Download the Starbucks App today!</p>
+                    <!--Insert clickable app store and google play store badges here-->
+                  </section>
+                </main>
