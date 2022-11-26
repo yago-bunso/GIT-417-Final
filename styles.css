@@ -140,6 +140,10 @@ padding: 10px;
     margin: 0 auto;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 h2 {
     text-align: left;
     font-family: freight-sans-pro, sans-serif;
