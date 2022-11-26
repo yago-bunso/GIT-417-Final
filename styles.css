@@ -149,7 +149,7 @@ padding: 10px;
 }*/
 
 section {
-    padding: 5%;
+    padding: 2%;
 }
 
 h2 {
@@ -159,12 +159,33 @@ h2 {
     font-style: normal;
     color: black;
     font-size: 2rem;
-    margin: 2rem 0;
+    margin: 3rem 0;
     text-transform: uppercase;
 }
 
 main h2 {
     margin: 0;
+}
+
+main{
+
+}
+
+.grid-container-element { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    width: 100%; 
+    justify: center;
+} 
+.grid-child-element { 
+    margin: 0px; 
+}
+
+.grid-child-element-paragraph {
+    padding-top: 20px;
+    width: 355px;
+    font-size: 20px;
 }
 
 h3 {
@@ -178,4 +199,5 @@ p {
     font-family: freight-sans-pro, sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 20px;
 }
