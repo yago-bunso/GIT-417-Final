@@ -10,17 +10,22 @@
   <!--CSS link here-->
   <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
+<body>
 <header>
   <a href="https://www.starbucks.com/"  aria-label="visit the official starbucks website" id="logo"><img src="./images/starbuckslogo.png" alt="the starbucks logo depicts a siren in white on a green background"></a>
   <h1>Starbucks</h1>
   <nav>
-    <h2>Main Navigation</h2><!--this gets hidden in the CSS-->
+    <h2 class="hide">Main Navigation</h2><!--this gets hidden in the CSS-->
     <ul>
       <li><a href="#">Drinks</a></li>
       <li><a href="#">Giveaway</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
+  <section id="toggleSwitch">
+    <button class="btn"><img src='.images/moonicon.png'></img></button>
+    <button class="btn"><img src='.images/sunicon.png'></img></button>
+    </section>
 </header>
 <main>
   <section>
@@ -69,7 +74,7 @@
           <!--Possibly make this a separate section for the product display buttons-->
           <!--Going to try to see how figures work in this section-->
           <!--the images need their own class for this section bc they need corner radius and possibly need to be masked or scaled up in size-->
-          <h2>Products</h2><!--this gets hidden in the CSS-->
+          <h2 class="hide">Products</h2><!--this gets hidden in the CSS-->
           <figure id="one">
             <img src="./images/caramelbruleelatteehot.jpg" alt="Caramel
             Brulée Latte">
@@ -110,7 +115,7 @@
               <section>
                 <h2>GIVEAWAY</h2>
                 <section>
-                  <h2>Game introduction</h2><!--hide this in CSS-->
+                  <h2 class="hide">Game introduction</h2><!--hide this in CSS-->
                 <p>We're feeling generous this holiday
                   season!<br>
                   Guess the number we're thinking of, <br>
@@ -133,7 +138,7 @@
                       to redeem this offer!</p>
                     </section>
                     <section>
-                      <h2>Game explanation</h2><!--hide this in CSS-->
+                      <h2 class="hide">Game explanation</h2><!--hide this in CSS-->
                       <!--How do you format uls again?-->
                       <p>How to play:</p>
                       <ul>
@@ -207,3 +212,5 @@
                               </section>
                               </section>
                             </main>
+                          </body>
+                          </html>
