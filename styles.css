@@ -135,6 +135,11 @@ nav li {
 padding: 10px;
 }
 
+#toggleSwitch img {
+    width: 50px;
+    margin: 0 auto;
+}
+
 h2 {
     text-align: left;
     font-family: freight-sans-pro, sans-serif;
