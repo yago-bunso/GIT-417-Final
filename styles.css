@@ -60,7 +60,7 @@ header {
     background-color: #d50032;
     width: 100%;
     color: #ffffff ;
-    grid-template-columns: 1fr 3fr 4fr 1fr;
+    grid-template-columns: 1.05fr 2fr 3fr 1fr;
     display: grid;
     align-items: center;
     max-width: 1820px;
@@ -69,7 +69,7 @@ header {
 }
 
 #logo {
-    width: fit-content;
+    width: 150px;
     margin: 0 auto;
     border-radius: 1rem;
 }
@@ -99,7 +99,7 @@ h1{
 }
 
 nav h2.hide {
-    padding-bottom: 120px;
+    padding-bottom: 65px;
 }
 
 nav {
@@ -144,10 +144,38 @@ padding: 10px;
     visibility: hidden;
 }
 
+/*main {
+    margin: 0 auto 2rem auto;
+}*/
+
+section {
+    padding: 5%;
+}
+
 h2 {
     text-align: left;
     font-family: freight-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     color: black;
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+}
+
+main h2 {
+    margin: 0;
+}
+
+h3 {
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+p {
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
