@@ -17,9 +17,9 @@
     <nav>
       <h2 class="hide">Main Navigation</h2><!--this gets hidden in the CSS-->
       <ul>
-        <li><a href="#">Drinks</a></li>
-        <li><a href="#">Giveaway</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#gameplay">Giveaway</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <section id="toggleSwitch">
@@ -41,9 +41,9 @@
       <!--I think div would be better because for every section you'd need an <h1-6> tag-->
 
       <h2>Featured Festivities</h2>
-      <section>
+      <section id="products">
         <div class="grid-container-element">
-          <div class="grid-child-element description">
+          <div class="grid-child-element-description">
             <h3>Caramel Brulée Latte</h3>
             <p>410 calories, 48g sugar, 14g fat</p>
             <div class="grid-child-element-paragraph"><p>Our signature espresso,
@@ -54,7 +54,7 @@
               brulée bits.</p>
             </div>
           </div>
-          <div class="grid-child-element image">
+          <div class="grid-child-element-image">
             <img src="./images/caramelbruleelatteehot.jpg" alt="hot caramel brluee flavored beverage in clear mug  with whipped cream and crunchy toppings">
           </div>
         </div>
@@ -218,29 +218,37 @@ Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanc
                           <div class="grid-child-soc-med"><!--GRID CHILD SOC MED START-->
                           <!--Insert clickable social media icons here-->
                           <!--They need black backgrounds and need corner radius-->
+                          <div class="soc-med-icons">
                           <a href="https://www.instagram.com/starbucks/"  aria-label="visit the official starbucks instagram" id="instagram"><img src="./images/instagramicon.png" alt="the instagram logo has a simplified monogram of an old fashioned polaroid camera"></a>
                           <a href="https://www.facebook.com/Starbucks/"  aria-label="visit the official starbucks instagram" id="facebook"><img src="./images/facebookicon.png" alt="the facebook logo is a lowercase letter f in facebooks typography"></a>
                           <a href="https://open.spotify.com/user/starbucks"  aria-label="listen to what we play in our cafes" id="spotify"><img src="./images/spotifyicon.png" alt="the spotify logo contains three wavelengths to symbolize sound"></a>
-
+                        </div>
+                        <div class="welovefeedbackparagraph">
                           <p>We love to hear feedback from our
-                            customers.<br>
+                            customers.<br><br>
 
 
                             If you have any questions, please see
                             our FAQs page to find out if your
                             inquiry can be answered as soon as
-                            possible.<br>
+                            possible.<br><br>
 
 
                             Other than that, we're glad to be of
                             service to you.
                           </p>
+                        </div>
+                        <div class="starbucksapp-section">
                           <img src="./images/starbucksapplogo.png" alt="the starbucks app icon depicts a siren in white aganist a green square" id="starbucks-app">
-
+                          </div>
+                          <div class="starbucksapp-section-paragraph">
                           <p>Collect stars and earn rewards.<br>
                             Download the Starbucks App today!</p>
+                            </div>
+                            <div class="starbucksapp-badges">
                             <a href="https://play.google.com/store/apps/details?id=com.starbucks.mobilecard&hl=en_US&gl=US&pli=1"  aria-label="download starbucks for android" id="googleplaybadge"><img src="./images/googleplaystorebadge.jpg" alt="the google play badge says get it on google play with a play button with a colorway of red, blue, yellow, and green (google colors)"></a>
                             <a href="https://apps.apple.com/us/app/starbucks/id331177714"  aria-label="download starbucks for ios" id="applestorebadge"><img src="./images/applestorebadge.jpg" alt="the google play badge says get it on google play with a play button with a colorway of red, blue, yellow, and green (google colors)"></a>
+                          </div>
                           </div><!--GRID CHILD SOC MED END-->
                           </div><!--FORM CONTAINER END-->
                         </section>
