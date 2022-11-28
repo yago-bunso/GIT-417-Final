@@ -205,13 +205,22 @@ Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanc
                           <input type="email" name="myEmail" id="myEmail" autocomplete="email" required>
 
                           <fieldset>
-                            <legend>Preffered Method of Contact<span class="required">*</span></legend>
-                            <input type="radio" name="contactPref" id="prefPhone" required checked>
-
-                            <label for="prefPhone">Phone</label>
-                            <input type="radio" name="contactPref" id="prefEmail" required>
-                            <label for="prefEmail">Email</label>
-                          </fieldset>
+                            <legend>Preffered Method of Contact: <span class="required">*</span></legend>
+                            <label for="phone" class="radio">
+                              <span class="radio_input">
+                                <input type="radio" name="contactMethod" id="phone" required checked>
+                                <span class="radio_control"></span>
+                              </span>
+                              <span class="radio_label">Phone</span>
+                            </label>
+                            <label for="email" class="radio">
+                              <span class="radio_input">
+                                <input type="radio" name="contactMethod" id="email" required>
+                                <span class="radio_control"></span>
+                               </span>
+                               <span class="radio_label">Email</span>
+                            </label>
+                          </fieldset><span id="food"></span>
                           <label for="myMessage">Comments<span class="required">*</span></label>
                           <textarea id="myMessage" required></textArea>
                             <input type="submit" name="mySubmit" id="mySubmit">

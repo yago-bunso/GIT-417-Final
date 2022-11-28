@@ -51,13 +51,28 @@ table {
 }
 /*--END OF STYLES RESET--*/
 
+:root {
+    --form-control-color: #d50032;
+    --red: #d50032;
+    --green: #1F3933;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+}
+
+
 body { 
     width: 1280px;
     margin: auto;
 }
 
 header {
-    background-color: #d50032;
+    background-color: var(--red);
     width: 100%;
     color: #ffffff ;
     grid-template-columns: 1.05fr 2fr 3fr 1fr;
@@ -83,7 +98,7 @@ h1{
     font-family: freight-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: white;
+    color: var(--white)
 }
 
 h1{
@@ -124,11 +139,11 @@ nav ul {
 nav a {
     list-style-type: none;
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 nav a:hover {
     border-bottom: 1rem solid;
-    color:#1F3933;
+    color:var(--green);
 }
 
 nav li {
@@ -169,7 +184,7 @@ h2 {
 
 main h2 {
     margin: 0;
-    padding: 77px 29px 58px;
+    padding: 77px 29px 8px;
 }
 
 
@@ -186,7 +201,7 @@ main h2 {
 }
 .grid-child-element-image img{ 
     margin: 0px; 
-    width: 85%;
+    width: 70%;
     border-radius: 50px;
 }
 
@@ -210,12 +225,12 @@ main h2 {
     justify-items: center;
     text-align: center;
     margin: 0px; 
-    padding: 100px 0px;
+    padding: 56px 0px;
 } 
 
 .grid-child-thumbnail {
     font-size: 1.5rem;
-    width: 75%;
+    width: 60%;
 }
 .grid-child-thumbnail img{
     width: 100%;
@@ -226,12 +241,12 @@ main h2 {
     font-family: freight-sans-pro, sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 13px 0px;
 }
 
 .grid-child-thumbnail:hover {
-    color: #d50032;
+    color: var(--red);
 }
 
 h3 {
@@ -249,7 +264,7 @@ p {
 }
 
 #gameplay {
-background-color: #1F3933;
+background-color: var(--green);
 color: white;
 padding: 20px 20px;
 }
@@ -278,7 +293,7 @@ padding: 20px 20px;
     font-style: normal;
     font-size: 1.5rem;
     padding: 5px 8px;
-    width: 355px;
+    width: 385px;
     list-style-type: circle;
 
 }
@@ -315,7 +330,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel]{
     padding: 8px;
     margin-top: 4px;
     margin-bottom: 12px;
-    border: 1px solid #aaa;
+    border: 1px solid var(--black);
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -350,7 +365,7 @@ textarea {
 
 #instagram img, #facebook img, #spotify img {
     width: 15%;
-    background-color: black;
+    background-color: var(--black);
     border-radius: 30px;
 }
 
@@ -378,7 +393,7 @@ width: 20px;
 }
 
 #gameplay input[type=submit] {
-    background-color: white;
+    background-color: var(--white);
     color: #1F3933;
     padding: 4px 38px;
     font-family: freight-sans-pro, sans-serif;
@@ -390,12 +405,71 @@ width: 20px;
 }
 
 b {
-    font-weight: 600;
+    font-weight: bold;
 }
 
+.required{
+    color: var(--red);
+    font-weight: 800;
+}
+
+.radio-control {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+.radio-control + .radio-control {
+    margin-top: 1em;
+}
+
+.form-control:focus-within {
+    color: var(--form-control-color);
+  }
+  
+  input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+  
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+  }
+  
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+
 #gameplay input[type=submit] {
-    background-color: white;
-    color: #1F3933;
+    background-color:var(--white);
     padding: 4px 38px;
     font-family: freight-sans-pro, sans-serif;
     font-weight: 700;
@@ -406,8 +480,8 @@ b {
 }
 
 #contact input[type=submit] {
-    background-color: #1F3933;
-    color: white;
+    background-color: var(--green);
+    color: var(--white);
     padding: 4px 38px;
     font-family: freight-sans-pro, sans-serif;
     font-weight: 700;
