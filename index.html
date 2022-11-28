@@ -145,16 +145,14 @@ Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanc
         </section>
       </section>
       <section id="gameplay">
-        <div class="grid-container-gameplay">
-          <h2>GIVEAWAY</h2>
-
-          <h2 class="hide">Game introduction</h2><!--hide this in CSS-->
-          <div class="grid-child-gameplay-introduction">
+        <h2>GIVEAWAY</h2>
+        <div class="grid-container-gameplay"><!--CONTAINER START-->
+          <div class="grid-child-gameplay-playarea"><!--GRIDCHILDPLAYAREA START-->
             <p>We're feeling generous this holiday
-              season!<br>
-              Guess the number we're thinking of, <br>
+              season!<br><br>
+              Guess the number we're thinking of,
               and you'll get a free drink
-              from us!</p>
+              from us!<br></p>
 
               <form>
                 <label for="num1">Enter a number between 1 - 10:</label>
@@ -170,10 +168,9 @@ Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanc
                 <p><b>Aw. Try again next time.</b></p>
                 <p>Please log into your Starbucks account
                   to redeem this offer!</p>
-                </div>
-                <h2 class="hide">Game explanation</h2><!--hide this in CSS-->
+                </div><!--GRIDCHILDPLAYAREA END-->
                 <!--How do you format uls again?-->
-                <div class="grid-child-gameplay-explanation">
+                <div class="grid-child-gameplay-explanation"><!--GRIDCHILDEXPLAIN START-->
                   <p>How to play:</p>
                   <ul>
                     <li>In the textbox, type in a number
@@ -186,15 +183,13 @@ Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanc
                           <li>A Starbucks Rewards account is
                             required to redeem the free drink.</li>
                           </ul>
-                        </div>
-                      </section>
-                    </div>
-
-
-                    <section>
-                      <section>
+                        </div><!--GRIDCHILDEXPLAIN END-->
+                    </div><!--CONTAINER END-->
+                  </section>
+                      <section id="contact-portion">
                         <h2>CONTACT US</h2>
-
+                        <div class="grid-container-form"><!--FORM CONTAINER START-->
+                        <div class="grid-child-form"><!--GRID CHILD FORM START-->
                         <form>
                           <label for="myName">Full Name<span class="required">*</span></label>
                           <input type="text" name="myName" id="myName" autocomplete="name" required>
@@ -219,8 +214,8 @@ Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanc
                           <textarea id="myMessage" required></textArea>
                             <input type="submit" name="mySubmit" id="mySubmit">
                           </form>
-                        </section>
-                        <section>
+                          </div><!--GRID CHILD FORM END-->
+                          <div class="grid-child-soc-med"><!--GRID CHILD SOC MED START-->
                           <!--Insert clickable social media icons here-->
                           <!--They need black backgrounds and need corner radius-->
                           <a href="https://www.instagram.com/starbucks/"  aria-label="visit the official starbucks instagram" id="instagram"><img src="./images/instagramicon.png" alt="the instagram logo has a simplified monogram of an old fashioned polaroid camera"></a>
@@ -246,7 +241,8 @@ Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanc
                             Download the Starbucks App today!</p>
                             <a href="https://play.google.com/store/apps/details?id=com.starbucks.mobilecard&hl=en_US&gl=US&pli=1"  aria-label="download starbucks for android" id="logo"><img src="./images/googleplaystorebadge.png" alt="the google play badge says get it on google play with a play button with a colorway of red, blue, yellow, and green (google colors)"></a>
                             <a href="https://apps.apple.com/us/app/starbucks/id331177714"  aria-label="download starbucks for ios" id="logo"><img src="./images/applestorebadge.jpg" alt="the google play badge says get it on google play with a play button with a colorway of red, blue, yellow, and green (google colors)"></a>
-                          </section>
+                          </div><!--GRID CHILD SOC MED END-->
+                          </div><!--FORM CONTAINER END-->
                         </section>
                       </main>
                     </body>

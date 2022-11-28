@@ -95,6 +95,7 @@ h1{
 .hide{
     visibility: hidden;
     height: 0px;
+    padding: 0px;
 }
 
 nav h2.hide {
@@ -167,9 +168,6 @@ main h2 {
     padding: 20px 13px 13px;
 }
 
-main{
-
-}
 
 .grid-container-element { 
     display: grid; 
@@ -240,15 +238,64 @@ p {
     font-size: 1.5rem;
 }
 
-.gameplay {
-    background-color: #1F3933;
-
+#gameplay {
+background-color: #1F3933;
+color: white;
+padding: 20px 20px;
 }
-
-.gameplay h2, p {
+#gameplay h2{
     color: white;
+    }
+    
+
+
+.grid-container-gameplay { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    width: 100%; 
+    justify-content: center;
+} 
+
+.grid-child-gameplay-playarea {
+    padding: 20px 8px 95px 150px;
+    width: 355px;
 }
 
-.gameplay {
-    width: 1280px;
+.grid-child-gameplay-explanation ul, .grid-child-gameplay-explanation li{
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding: 5px 8px;
+    width: 355px;
+    list-style-type: circle;
+
+}
+
+.grid-container-form { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    width: 100%; 
+    justify-content: center;
+} 
+
+.grid-child-form {
+    padding: 20px 8px 95px 150px;
+    width: 355px;
+}
+
+.grid-child-form {
+    padding: 20px 8px 95px 150px;
+    width: 355px;
+}
+
+.grid-child-soc-med {
+    padding: 20px 8px 95px 150px;
+    width: 355px;
+}
+
+#contact-portion{
+    background-color: grey;
 }
