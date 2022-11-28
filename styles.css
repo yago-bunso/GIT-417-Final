@@ -52,7 +52,7 @@ table {
 /*--END OF STYLES RESET--*/
 
 body { 
-    min-width: 1280px;
+    width: 1280px;
     margin: auto;
 }
 
@@ -63,7 +63,6 @@ header {
     grid-template-columns: 1.05fr 2fr 3fr 1fr;
     display: grid;
     align-items: center;
-    max-width: 1820px;
     margin: 0 auto;
     gap: 10px;
 }
@@ -71,7 +70,6 @@ header {
 #logo {
     width: 150px;
     margin: 0 auto;
-    border-radius: 1rem;
 }
 
 #logo img{
@@ -96,6 +94,7 @@ h1{
 
 .hide{
     visibility: hidden;
+    height: 0px;
 }
 
 nav h2.hide {
@@ -149,7 +148,7 @@ padding: 10px;
 }*/
 
 section {
-    padding: 2%;
+    padding: 0px;
 }
 
 h2 {
@@ -158,13 +157,14 @@ h2 {
     font-weight: 700;
     font-style: normal;
     color: black;
-    font-size: 2rem;
-    margin: 3rem 0;
+    font-size: 3rem;
+    margin: 2rem 0;
     text-transform: uppercase;
 }
 
 main h2 {
     margin: 0;
+    padding: 20px 13px 13px;
 }
 
 main{
@@ -176,28 +176,79 @@ main{
     grid-template-columns: 1fr 1fr; 
     grid-gap: 20px; 
     width: 100%; 
-    justify: center;
+    justify-content: center;
 } 
 .grid-child-element { 
     margin: 0px; 
+    padding: 0px 20px 0px 20px;
 }
 
 .grid-child-element-paragraph {
     padding-top: 20px;
     width: 355px;
+    font-size: 1.5rem;
+}
+.grid-child-element-paragraph {
+    padding-top: 20px;
+    width: 355px;
+    font-size: 1.5rem;
+}
+
+.grid-container-thumbnails { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-gap: 0px; 
+    width: 100%; 
+    align-items: start;
+    justify-items: center;
+    text-align: center;
+    margin: 0px; 
+} 
+
+.grid-child-thumbnail {
+    font-size: 1.5rem;
+    width: 75%;
+}
+.grid-child-thumbnail img{
+    width: 100%;
+    border-radius: 150px;
+}
+
+.grid-child-thumbnail figcaption {
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 20px;
+    padding: 10px;
+}
+
+.grid-child-thumbnail:hover {
+    color: #d50032;
 }
 
 h3 {
     font-family: freight-sans-pro, sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 p {
     font-family: freight-sans-pro, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.5rem;
+}
+
+.gameplay {
+    background-color: #1F3933;
+
+}
+
+.gameplay h2, p {
+    color: white;
+}
+
+.gameplay {
+    width: 1280px;
 }
