@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/gfj3lrr.css");
 
 /*--START OF STYLES RESET--*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
@@ -15,7 +15,7 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
+article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
@@ -27,7 +27,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -66,7 +66,7 @@ table {
 }
 
 
-body { 
+body {
     width: 1280px;
     margin: auto;
 }
@@ -188,19 +188,19 @@ main h2 {
 }
 
 
-.grid-container-element { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 20px; 
-    width: 100%; 
+.grid-container-element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
     justify-content: center;
-} 
-.grid-child-element-description{ 
-    margin: 0px; 
+}
+.grid-child-element-description{
+    margin: 0px;
     padding: 0px 0px 0px 150px;
 }
-.grid-child-element-image img{ 
-    margin: 0px; 
+.grid-child-element-image img{
+    margin: 0px;
     width: 70%;
     border-radius: 50px;
 }
@@ -216,17 +216,17 @@ main h2 {
     font-size: 1.5rem;
 }
 
-.grid-container-thumbnails { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-gap: 0px; 
-    width: 100%; 
+.grid-container-thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    width: 100%;
     align-items: start;
     justify-items: center;
     text-align: center;
-    margin: 0px; 
+    margin: 0px;
     padding: 56px 0px;
-} 
+}
 
 .grid-child-thumbnail {
     font-size: 1.5rem;
@@ -271,16 +271,16 @@ padding: 20px 20px;
 #gameplay h2{
     color: white;
     }
-    
 
 
-.grid-container-gameplay { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 20px; 
-    width: 100%; 
+
+.grid-container-gameplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
     justify-content: center;
-} 
+}
 
 .grid-child-gameplay-playarea {
     padding: 20px 8px 95px 150px;
@@ -298,15 +298,15 @@ padding: 20px 20px;
 
 }
 
-.grid-container-form { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 20px; 
-    width: 100%; 
+.grid-container-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
     justify-content: center;
     justify-items: center;
     align-items: center;
-} 
+}
 
 .grid-child-form {
     padding: 0px 0px 0px 150px;
@@ -429,7 +429,7 @@ b {
 .form-control:focus-within {
     color: var(--form-control-color);
   }
-  
+
   input[type="radio"] {
     /* Add if not using autoprefixer */
     -webkit-appearance: none;
@@ -439,7 +439,7 @@ b {
     background-color: var(--form-background);
     /* Not removed via appearance */
     margin: 0;
-  
+
     font: inherit;
     color: currentColor;
     width: 1.15em;
@@ -447,11 +447,11 @@ b {
     border: 0.15em solid currentColor;
     border-radius: 50%;
     transform: translateY(-0.075em);
-  
+
     display: grid;
     place-content: center;
   }
-  
+
   input[type="radio"]::before {
     content: "";
     width: 0.65em;
@@ -463,7 +463,7 @@ b {
     /* Windows High Contrast Mode */
     background-color: CanvasText;
   }
-  
+
   input[type="radio"]:checked::before {
     transform: scale(1);
   }
