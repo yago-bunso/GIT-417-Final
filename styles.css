@@ -158,14 +158,14 @@ h2 {
     font-weight: 700;
     font-style: normal;
     color: black;
-    font-size: 3rem;
+    font-size: 50px;
     margin: 2rem 0;
     text-transform: uppercase;
 }
 
 main h2 {
     margin: 0;
-    padding: 20px 13px 13px;
+    padding: 55px 13px 20px;
 }
 
 
@@ -287,7 +287,7 @@ padding: 20px 20px;
 }
 
 .grid-child-form {
-    padding: 20px 8px 95px 150px;
+    padding: 20px 8px 95px 40px;
     width: 355px;
 }
 
@@ -298,4 +298,22 @@ padding: 20px 20px;
 
 #contact-portion{
     background-color: grey;
+}
+
+.grid-child-soc-med img {
+
+}
+
+#instagram img, #facebook img, #spotify img {
+    width: 10%;
+}
+
+#starbucks-app {
+    width: 40%;
+    border-radius: 20%;
+}
+
+#googleplaybadge img, #applestorebadge img{
+    height: 50px;
+    border-radius: 10px;
 }
