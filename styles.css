@@ -343,15 +343,15 @@ textarea {
 }
 
 .soc-med-icons{
-    padding: 0px 0px 0px 130px;
+    padding: 0px 0px 0px 135px;
 }
 
 
 
 #instagram img, #facebook img, #spotify img {
-    width: 10%;
+    width: 15%;
     background-color: black;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .starbucksapp-section img {
@@ -391,4 +391,28 @@ width: 20px;
 
 b {
     font-weight: 600;
+}
+
+#gameplay input[type=submit] {
+    background-color: white;
+    color: #1F3933;
+    padding: 4px 38px;
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    border-style: none;
+    border-radius: 50px
+}
+
+#contact input[type=submit] {
+    background-color: #1F3933;
+    color: white;
+    padding: 4px 38px;
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    border-style: none;
+    border-radius: 50px
 }
