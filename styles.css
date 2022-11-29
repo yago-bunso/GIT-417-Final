@@ -58,11 +58,31 @@ table {
     --black: #000000;
     --yellow: #FFF621;
     --blue: #4886FF;
+    --dark-grey: #313131;
 }
 
 body {
     width: 1280px;
     margin: auto;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.darkToggle{
+appearance: none;
+width: 20px;
+height: 20px;
+background: var(--white);
+border-radius: 20px;
+border: 2px solid var(--red);
+}
+
+.darkToggle:checked {
+    background: var(--blue);
+}
+
+.dark {
+    color: white;
+    background: var(--dark-grey);
 }
 
 header {
