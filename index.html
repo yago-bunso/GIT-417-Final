@@ -8,10 +8,12 @@
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <!--CSS link here-->
+  <script src="script.js"></script>
   <link href="styles.css" rel="stylesheet" type="text/css">
   <!--ALL CONTENT TAKEN FROM https://www.starbucks.com/ THIS WAS CREATED FOR EDUCATIONAL PURPOSES-->
 </head>
 <body>
+  <div id="background-color">
   <header>
     <a href="https://www.starbucks.com/"  aria-label="visit the official starbucks website" id="logo"><img src="./images/starbuckslogo.png" alt="the starbucks logo depicts a siren in white on a green background"></a>
     <h1>Starbucks</h1>
@@ -23,30 +25,14 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <!--mess with the javascript to make them disappear on click when the other option is active-->
-    <!--scrapping this idea for now<section id="toggleSwitch">
-      <div class="sun">
-        <img src="./images/sunicon.png">
-        <button id="btn-toggle">Light</button>
-      </div>
-      <div class="moon">
-        <img src="./images/moonicon.png">
-        <button id="darkModeBtn">Dark</button>
-      </div>
-      </section>-->
-      
-      <input type="checkbox" id="darkToggle" class="darkToggle">
-  <label for="darkToggle">
-    
-    <!--I thought you could make an image act like a button, but I made labels for the sun and moon icons for a reason,
-    I'll make those as buttons-->
+    <button onclick="darkMode()" id="toggleButton">Dark mode</button>
   </header>
   <main>
     <section>
       <!--Each of the products might need their own section or div?-->
       <!--I think div would be better because for every section you'd need an <h1-6> tag-->
 
-      <h2>Featured Festivities</h2>
+      <h2 id="h2">Featured Festivities</h2>
       <section id="products">
         <div class="grid-container-element">
           <div class="grid-child-element-description">
@@ -151,7 +137,7 @@ Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanc
         </section>
       </section>
       <section id="gameplay">
-        <h2>GIVEAWAY</h2>
+        <h2 id="h2">GIVEAWAY</h2>
         <div class="grid-container-gameplay"><!--CONTAINER START-->
           <div class="grid-child-gameplay-playarea"><!--GRIDCHILDPLAYAREA START-->
             <p>We're feeling generous this holiday
@@ -195,7 +181,7 @@ Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanc
                       </div><!--CONTAINER END-->
                     </section>
                     <section id="contact">
-                      <h2>CONTACT US</h2>
+                      <h2 id="h2">CONTACT US</h2>
                       <div class="grid-container-form"><!--FORM CONTAINER START-->
                         <div class="grid-child-form"><!--GRID CHILD FORM START-->
                           <form>
@@ -270,5 +256,6 @@ Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanc
                           </div><!--FORM CONTAINER END-->
                         </section>
                       </main>
+                      </div>
                     </body>
                     </html>

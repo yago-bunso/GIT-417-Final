@@ -48,7 +48,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} 
 /*--END OF STYLES RESET--*/
 
 :root {
@@ -61,28 +61,12 @@ table {
     --dark-grey: #313131;
 }
 
+
+
 body {
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.darkToggle{
-appearance: none;
-width: 20px;
-height: 20px;
-background: var(--white);
-border-radius: 20px;
-border: 2px solid var(--red);
-}
-
-.darkToggle:checked {
-    background: var(--blue);
-}
-
-.dark {
-    color: white;
-    background: var(--dark-grey);
+    background-color: var(--white);
 }
 
 header {
@@ -96,42 +80,7 @@ header {
     gap: 10px;
 }
 
-.sun button {
-    background-color: var(--yellow);
-    color: var(--black);
-    padding: 2px 10px;
-    font-family: freight-sans-pro, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: .8rem;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 50px
-}
-.moon button {
-    background-color: var(--blue);
-    color: var(--white);
-    padding: 2px 10px;
-    font-family: freight-sans-pro, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: .8rem;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 50px;
-}
 
-#toggleSwitch img{
-    width: 43px;
-    margin: 0 auto;
-    background-color: var(--black);
-    border-radius: 50px;
-    padding: 5px;
-}
-
-#toggleSwitch {
-    display: flex;
-}
 
 #logo {
     width: 150px;
@@ -206,9 +155,11 @@ nav li {
     visibility: hidden;
 }
 
-/*main {
-    margin: 0 auto 2rem auto;
-}*/
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 
 section {
     padding: 0px;
@@ -219,7 +170,6 @@ h2 {
     font-family: freight-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: black;
     font-size: 75px;
     margin: 2rem 0;
     text-transform: uppercase;
@@ -480,3 +430,36 @@ b {
     border-style: none;
     border-radius: 50px
 }
+
+#toggleButton {
+    background-color: var(--blue);
+    color:white;
+    padding: 2px 10px;
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: .8rem;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 50px
+}
+
+.lightBtn {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.darkBtn {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.dark-mode {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    } 
+
+.dark-mode-h2 {
+    color: var(--white);
+}    
+    
