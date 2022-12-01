@@ -232,15 +232,19 @@ main h2 {
     border-radius: 150px;
 }
 
-.grid-child-thumbnail figcaption {
+.grid-child-thumbnail button {
     font-family: freight-sans-pro, sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 18px;
+    font-size: 12px;
     padding: 13px 0px;
+    background-color: transparent;
+    border: none;
+    height: 100%;
 }
 
-.grid-child-thumbnail:hover {
+
+.grid-child-thumbnail button:hover {
     color: var(--red);
 }
 
@@ -385,7 +389,7 @@ padding: 50px 0px 0px 100px;
 }
 
 #gameplay input[type=number] {
-width: 20px;
+width: 50px;
 }
 
 b {
@@ -447,7 +451,6 @@ b {
     color: var(--white);
 }    
 
-.dark-mode-contactBtn {
-    color: var(--green);
-    background-color: var(--white);
+.dark-mode-btns {
+color: var(--white);
 }

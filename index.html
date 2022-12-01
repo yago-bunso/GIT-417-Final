@@ -13,7 +13,7 @@
   <!--ALL CONTENT TAKEN FROM https://www.starbucks.com/ THIS WAS CREATED FOR EDUCATIONAL PURPOSES-->
 </head>
 <body>
-  <div id="background-color">
+  <div id="body-color">
   <header>
     <a href="https://www.starbucks.com/"  aria-label="visit the official starbucks website" id="logo"><img src="./images/starbuckslogo.png" alt="the starbucks logo depicts a siren in white on a green background"></a>
     <h1>Starbucks</h1>
@@ -38,7 +38,7 @@
           <div class="grid-child-element-description">
 
             <div id="product-h3">
-            <h3 id="CBL-h3">Caramel Brulée Latte</h3>
+            <h3 id="CBL-h3" class="hidden">Caramel Brulée Latte</h3>
             <h3 id="PHC-h3" class="hidden">Peppermint Hot Chocolate</h3>
             <h3 id="TWCMF-h3" class="hidden">Toasted White Chocolate Mocha Frappuccino</h3>
             <h3 id="HB" class="hidden">Holiday Blend</h3>
@@ -46,15 +46,15 @@
           </div>
           
           <div id="product-nutrition">
-            <p id="CBL-nutrition">410 calories, 48g sugar, 14g fat</p>
-            <!--<p id="PHC-nutrition" class="hidden">440 calories, 56g sugar, 16g fat</p>-->
-            <!--<p id="TWCMF-nutrition" class="hidden">420 calories, 64g sugar, 16g fat</p>-->
-            <!--<p id="RCP-nutrition" class="hidden">40 calories, 14g sugar, 7g fat</p>-->
+            <p id="CBL-nutrition" class="hidden">410 calories, 48g sugar, 14g fat</p>
+            <p id="PHC-nutrition" class="hidden">440 calories, 56g sugar, 16g fat</p>
+            <p id="TWCMF-nutrition" class="hidden">420 calories, 64g sugar, 16g fat</p>
+            <p id="RCP-nutrition" class="hidden">40 calories, 14g sugar, 7g fat</p>
             </div>
 
             <div id="grid-child-element-paragraph">
             
-              <p id="CBL-desc">Our signature espresso, steamed milk and rich caramel brulée sauce finished with
+              <p id="CBL-desc" class="hidden">Our signature espresso, steamed milk and rich caramel brulée sauce finished with
               whipped cream and a supreme topping of even more caramel brulée bits.</p>
               <p id="PHC-desc" class="hidden">A big welcome back to our classic holiday hot chocolate—lovingly made with chocolaty mocha sauce, peppermint-flavored syrup and steamed milk and sweetly topped with whipped cream and dark-chocolate curls.</p>
               <p id="TWMCF-desc" class="hidden">A toasty holiday blend of wonder: Frappuccino® Roast coffee, milk, ice and flavors of caramelized white chocolate with a cheerful topping of whipped cream, festive holiday sugar sparkles and crispy white pearls.</p>
@@ -62,57 +62,53 @@
               <p id="RCP-desc" class="hidden">Vanilla cake interior with chocolaty icing, finished with a festive red nose and antlers.</p>
             </div>
           </div>
-          <div  class="grid-child-element-image">
-            <img id="CBL-img" src="./images/caramelbruleelatteehot.jpg" alt="hot caramel brluee flavored beverage in clear mug  with whipped cream and crunchy toppings">
+          <div class="grid-child-element-image">
+            <img id="CBL-img" class="hidden" src="./images/caramelbruleelatteehot.jpg" alt="hot caramel brluee flavored beverage in clear mug  with whipped cream and crunchy toppings">
             <img id="PHC-img" class="hidden" src="./images/pepperminthotchocolate.jpg" alt="hot chocolate and peppermint beverage in clear mug with whipped cream and chocolate curl toppings">
             <img id="TWCMF-img" class="hidden" src="./images/toastedwhitemochafrappuccino.jpg" alt="toasted white chocolate flavored beverage with whipped cream and red sprinkles on top">
-            <img id="HB-img" class="hidden" src="./images/holidayblend.jpg" alt="blue bag of a pound of whole beans">-->
+            <img id="HB-img" class="hidden" src="./images/holidayblend.jpg" alt="blue bag of a pound of whole beans">
             <img id="RCP-img" class="hidden" src="./images/reindeercakepop.jpg" alt="chocolate cake pop in the shape of a reindeer with dark chocolate antlers and a red nose">
           </div>
         </div>
 
   <h2 class="pass-validation">Products</h2>
   <div class="grid-container-thumbnails">
-    <div class="grid-child-thumbnail">
-      <figure id="one">
-        <img src="./images/caramelbruleelatteehot.jpg" alt="Caramel
+    <div class="grid-child-thumbnail" id="CBL-p1">
+      <button  onclick="displayProduct()">
+        <img id="CBL-thumbnail" src="./images/caramelbruleelatteehot.jpg" alt="Caramel
         Brulée Latte">
-        <figcaption>Caramel
-          Brulée Latte</figcaption>
-        </figure>
+        <p class="productListing">Caramel Brulée Latte</p>
+        </button>
       </div>
       <div class="grid-child-thumbnail">
-        <figure id="two">
-          <img src="./images/pepperminthotchocolate.jpg" alt="Peppermint
+        <button onclick="function()" id="PHC">
+          <img id="PHC-thumbnail" src="./images/pepperminthotchocolate.jpg" alt="Peppermint
           Hot Chocolate">
-          <figcaption>Peppermint
-            Hot Chocolate</figcaption>
-          </figure>
+          <p class="productListing">Peppermint Hot Chocolate</p>
+          </button>
         </div>
 
         <div class="grid-child-thumbnail">
-          <figure id="three">
-            <img src="./images/toastedwhitemochafrappuccino.jpg" alt="Toasted White
+          <button onclick="function()" id="TWCMF">
+            <img id="TWCMF-thumbnail" src="./images/toastedwhitemochafrappuccino.jpg" alt="Toasted White
             Mocha Frappuccino">
-            <figcaption>Toasted White
-              Mocha Frappuccino</figcaption>
-            </figure>
+            <p class="productListing">Toasted White Mocha Frappuccino</p>
+            </button>
           </div>
 
           <div class="grid-child-thumbnail">
-            <figure id="four">
-              <img src="./images/holidayblend.jpg" alt="Holiday Blend">
-              <figcaption>Holiday Blend </figcaption>
-            </figure>
+            <button onclick="function()" id="HB">
+              <img id="HB-thumbnail" src="./images/holidayblend.jpg" alt="Holiday Blend">
+              <p class="productListing">Holiday Blend</p>
+            </button>
           </div>
 
           <div class="grid-child-thumbnail">
-            <figure id="five">
-              <img src="./images/reindeercakepop.jpg" alt="Reindeer
+            <button onclick="function()" id="RCP">
+              <img id="RCP-thumbnail" src="./images/reindeercakepop.jpg" alt="Reindeer
               Cake Pop">
-              <figcaption>Reindeer
-                Cake Pop</figcaption>
-              </figure>
+              <p class="productListing">Reindeer Cake Pop</p>
+              </button>
             </div>
           </div>
         </section>
@@ -121,19 +117,14 @@
         <h2 id="h2">GIVEAWAY</h2>
         <div class="grid-container-gameplay"><!--CONTAINER START-->
           <div class="grid-child-gameplay-playarea"><!--GRIDCHILDPLAYAREA START-->
-            <p>We're feeling generous this holiday
-              season!<br><br>
-              Guess the number we're thinking of,
-              and you'll get a free drink
-              from us!<br></p>
+            <p>We're feeling generous this holiday season!<br><br>
+              Guess the number we're thinking of, and you'll get a free drink from us!<br></p>
 
               <form>
                 <label for="num1">Enter a number between 1 - 10:</label>
                 <input type="number" name="num1" id="num1">
                 <input type="submit" id="numSubmit">
               </form>
-              <!--Place an input field here-->
-              <!--Make this a submit button-->
 
               <!--Depending if the user got the number right, I think these will need hidden classes and I think the class gets deleted or added depending if they got the number right-->
               <!--<p class="hide">-->
