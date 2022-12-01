@@ -40,24 +40,24 @@
             <div id="product-h3">
             <h3 id="CBL-h3" class="hidden">Caramel Brulée Latte</h3>
             <h3 id="PHC-h3" class="hidden">Peppermint Hot Chocolate</h3>
-            <h3 id="TWCMF-h3" class="hidden">Toasted White Chocolate Mocha Frappuccino</h3>
-            <h3 id="HB" class="hidden">Holiday Blend</h3>
-            <h3 id="RCP" class="hidden">Reindeer Cake Pop</h3>
+            <h3 id="TWMF-h3" class="hidden">Toasted White Mocha Frappuccino</h3>
+            <h3 id="HB-h3" class="hidden">Holiday Blend</h3>
+            <h3 id="RCP-h3" class="hidden">Reindeer Cake Pop</h3>
           </div>
           
           <div id="product-nutrition">
             <p id="CBL-nutrition" class="hidden">410 calories, 48g sugar, 14g fat</p>
             <p id="PHC-nutrition" class="hidden">440 calories, 56g sugar, 16g fat</p>
-            <p id="TWCMF-nutrition" class="hidden">420 calories, 64g sugar, 16g fat</p>
+            <p id="TWMF-nutrition" class="hidden">420 calories, 64g sugar, 16g fat</p>
             <p id="RCP-nutrition" class="hidden">40 calories, 14g sugar, 7g fat</p>
             </div>
 
-            <div id="grid-child-element-paragraph">
+            <div id="product-desc">
             
               <p id="CBL-desc" class="hidden">Our signature espresso, steamed milk and rich caramel brulée sauce finished with
               whipped cream and a supreme topping of even more caramel brulée bits.</p>
               <p id="PHC-desc" class="hidden">A big welcome back to our classic holiday hot chocolate—lovingly made with chocolaty mocha sauce, peppermint-flavored syrup and steamed milk and sweetly topped with whipped cream and dark-chocolate curls.</p>
-              <p id="TWMCF-desc" class="hidden">A toasty holiday blend of wonder: Frappuccino® Roast coffee, milk, ice and flavors of caramelized white chocolate with a cheerful topping of whipped cream, festive holiday sugar sparkles and crispy white pearls.</p>
+              <p id="TWMF-desc" class="hidden">A toasty holiday blend of wonder: Frappuccino® Roast coffee, milk, ice and flavors of caramelized white chocolate with a cheerful topping of whipped cream, festive holiday sugar sparkles and crispy white pearls.</p>
               <p id="HB-desc" class="hidden">Notes of Sweet Maple & Herbs Crafted with all celebrations in mind, Starbucks® Holiday Blend offers a balanced, sweet and toasty blend of bright Latin American beans and rich Sumatran coffee. The blend is specially roasted to highlight the complexity of flavors, creating a full-bodied, vibrant cup every time. Layered notes of sweet maple and herbs balance the rich flavors of this confident cup.</p>
               <p id="RCP-desc" class="hidden">Vanilla cake interior with chocolaty icing, finished with a festive red nose and antlers.</p>
             </div>
@@ -65,7 +65,7 @@
           <div class="grid-child-element-image">
             <img id="CBL-img" class="hidden" src="./images/caramelbruleelatteehot.jpg" alt="hot caramel brluee flavored beverage in clear mug  with whipped cream and crunchy toppings">
             <img id="PHC-img" class="hidden" src="./images/pepperminthotchocolate.jpg" alt="hot chocolate and peppermint beverage in clear mug with whipped cream and chocolate curl toppings">
-            <img id="TWCMF-img" class="hidden" src="./images/toastedwhitemochafrappuccino.jpg" alt="toasted white chocolate flavored beverage with whipped cream and red sprinkles on top">
+            <img id="TWMF-img" class="hidden" src="./images/toastedwhitemochafrappuccino.jpg" alt="toasted white chocolate flavored beverage with whipped cream and red sprinkles on top">
             <img id="HB-img" class="hidden" src="./images/holidayblend.jpg" alt="blue bag of a pound of whole beans">
             <img id="RCP-img" class="hidden" src="./images/reindeercakepop.jpg" alt="chocolate cake pop in the shape of a reindeer with dark chocolate antlers and a red nose">
           </div>
@@ -73,15 +73,15 @@
 
   <h2 class="pass-validation">Products</h2>
   <div class="grid-container-thumbnails">
-    <div class="grid-child-thumbnail" id="CBL-p1">
-      <button  onclick="displayProduct()">
+    <div class="grid-child-thumbnail" id="CBL">
+      <button  onclick="displayCBL()">
         <img id="CBL-thumbnail" src="./images/caramelbruleelatteehot.jpg" alt="Caramel
         Brulée Latte">
         <p class="productListing">Caramel Brulée Latte</p>
         </button>
       </div>
       <div class="grid-child-thumbnail">
-        <button onclick="function()" id="PHC">
+        <button onclick="displayPHC()" id="PHC">
           <img id="PHC-thumbnail" src="./images/pepperminthotchocolate.jpg" alt="Peppermint
           Hot Chocolate">
           <p class="productListing">Peppermint Hot Chocolate</p>
@@ -89,22 +89,22 @@
         </div>
 
         <div class="grid-child-thumbnail">
-          <button onclick="function()" id="TWCMF">
-            <img id="TWCMF-thumbnail" src="./images/toastedwhitemochafrappuccino.jpg" alt="Toasted White
+          <button onclick="displayTWMF()" id="TWMF">
+            <img id="TWMF-thumbnail" src="./images/toastedwhitemochafrappuccino.jpg" alt="Toasted White
             Mocha Frappuccino">
             <p class="productListing">Toasted White Mocha Frappuccino</p>
             </button>
           </div>
 
           <div class="grid-child-thumbnail">
-            <button onclick="function()" id="HB">
+            <button onclick="displayHB()" id="HB">
               <img id="HB-thumbnail" src="./images/holidayblend.jpg" alt="Holiday Blend">
               <p class="productListing">Holiday Blend</p>
             </button>
           </div>
 
           <div class="grid-child-thumbnail">
-            <button onclick="function()" id="RCP">
+            <button onclick="displayRCP()" id="RCP">
               <img id="RCP-thumbnail" src="./images/reindeercakepop.jpg" alt="Reindeer
               Cake Pop">
               <p class="productListing">Reindeer Cake Pop</p>
@@ -120,6 +120,7 @@
             <p>We're feeling generous this holiday season!<br><br>
               Guess the number we're thinking of, and you'll get a free drink from us!<br></p>
 
+              <span id="random1"></span>
               <form>
                 <label for="num1">Enter a number between 1 - 10:</label>
                 <input type="number" name="num1" id="num1">
@@ -127,15 +128,15 @@
               </form>
 
               <!--Depending if the user got the number right, I think these will need hidden classes and I think the class gets deleted or added depending if they got the number right-->
-              <!--<p class="hide">-->
-              <p><b>Yay! Congrats! You've just won a free
-                drink of your choice!</b></p><br>
-                <!--<p class="hide">-->
-                <p><b>Aw. Try again next time.</b></p><br></be>
+              
+              <span id="winOrLoseMessage"></span>
+              <!--Yay! Congrats! You've just won a free
+                drink of your choice!Aw. Try again next time.
                 <p>Please log into your Starbucks account
-                  to redeem this offer!</p>
+                  to redeem this offer!</p>-->
+
                 </div><!--GRIDCHILDPLAYAREA END-->
-                <!--How do you format uls again?-->
+
                 <div class="grid-child-gameplay-explanation"><!--GRIDCHILDEXPLAIN START-->
                   <p>How to play:</p>
                   <ul>
