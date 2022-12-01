@@ -35,10 +35,10 @@ function darkMode() {
 function displayCBL(){
 let CBLbutton = document.querySelector("#CBL img");
 CBLbutton.addEventListener("click", function(){
-  document.getElementById("CBL-desc").classList.remove("hidden");
-  document.getElementById("CBL-nutrition").classList.remove("hidden");
-  document.getElementById("CBL-h3").classList.remove("hidden");
-  document.getElementById("CBL-img").classList.remove("hidden");
+  document.getElementById("CBL-desc").classList.toggle("hidden");
+  document.getElementById("CBL-nutrition").classList.toggle("hidden");
+  document.getElementById("CBL-h3").classList.toggle("hidden");
+  document.getElementById("CBL-img").classList.toggle("hidden");
 })
 
 
@@ -82,27 +82,48 @@ function displayPHC(){
         })
         }
     
-function gamePlay() {
-let num1 = document.getElementById("num1");
-let num2 = document.getElementById("num2");
-let gameMessage = document.getElementById("winOrLoseMessage");
 
-let die1 = getRandomNumber(1,10);
+        function checkForm() {
+          let name = document.getElementById('fullName');
+          let email = document.getElementById('email');
+          let phone = document.getElementById("phone")
+          let error = document.getElementById('formErrors');
+          let isValid = true;
+          if (!name.value.length >= 1) {
+            isValid = false;
+            name.classList.add("error");
+            let nameErr = document.createElement("li");
+            nameErr.textContent = "Missing full name.";
+            error.appendChild(nameErr);
+            }
+            if (!email.value || !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,5}$/.test(email.value)) {
+            isValid = false;
+            email.classList.add("error");
+            let emailErr = document.createElement("li");
+            emailErr.textContent = "Invalid or missing email address.";
+            error.appendChild(emailErr);
+            }
 
-num1.innerHTML = die1;
+            if (!phone.value || !/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test(phone.value)) {
+              isValid = false;
+              phone.classList.add("error");
+              let phoneErr = document.createElement("li");
+              phoneErr.textContent = "Please enter phone number in correct format";
+              error.appendChild(phoneErr);
+              }
 
-let seeMinandMax = function(number)
-{
-	if(number < 10, number > 1 ){
-		return number + " is less than 100";
-	}else{
-		return number + " is 100 or greater"
-	}
-}
-if(num1.value == num2.value){
-
-  gameMessage.innerHTML = "Yay! Congrats! You've just won a free drink of your choice!";
-}else{
-  gameMessage.innerHTML = "Aw. Try Again Nexttime.";
-}
-}
+            if (isValid === true) {
+              name.classList.remove("error");
+             email.classList.remove("error");
+             password.classList.remove("error");
+             passwordConfirm.classList.remove("error");
+              formErrors.classList.add("hide");
+              }
+              }
+              
+              document.getElementById("submit").addEventListener("click", function(event) {
+              checkForm();
+              
+              // Prevent default form action. DO NOT REMOVE THIS LINE
+              event.preventDefault();
+              });

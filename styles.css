@@ -454,3 +454,7 @@ b {
 .dark-mode-btns {
 color: var(--white);
 }
+
+#formErrors {
+    color: red;
+ }

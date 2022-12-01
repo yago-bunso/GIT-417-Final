@@ -32,7 +32,7 @@
       <!--Each of the products might need their own section or div?-->
       <!--I think div would be better because for every section you'd need an <h1-6> tag-->
 
-      <h2 id="h2">Featured Festivities</h2>
+      <h2 class="white-text">Featured Festivities</h2>
       <section id="products">
         <div class="grid-container-element">
           <div class="grid-child-element-description">
@@ -74,47 +74,41 @@
   <h2 class="pass-validation">Products</h2>
   <div class="grid-container-thumbnails">
     <div class="grid-child-thumbnail" id="CBL">
-      <button  onclick="displayCBL()">
+      <button  onclick="displayCBL()"></button>
         <img id="CBL-thumbnail" src="./images/caramelbruleelatteehot.jpg" alt="Caramel
         Brulée Latte">
-        <p class="productListing">Caramel Brulée Latte</p>
-        </button>
+
       </div>
       <div class="grid-child-thumbnail">
-        <button onclick="displayPHC()" id="PHC">
+        <button onclick="displayPHC()" id="PHC"></button>
           <img id="PHC-thumbnail" src="./images/pepperminthotchocolate.jpg" alt="Peppermint
           Hot Chocolate">
-          <p class="productListing">Peppermint Hot Chocolate</p>
-          </button>
+
         </div>
 
         <div class="grid-child-thumbnail">
-          <button onclick="displayTWMF()" id="TWMF">
+          <button onclick="displayTWMF()" id="TWMF"></button>
             <img id="TWMF-thumbnail" src="./images/toastedwhitemochafrappuccino.jpg" alt="Toasted White
             Mocha Frappuccino">
-            <p class="productListing">Toasted White Mocha Frappuccino</p>
-            </button>
+
           </div>
 
           <div class="grid-child-thumbnail">
-            <button onclick="displayHB()" id="HB">
+            <button onclick="displayHB()" id="HB"></button>
               <img id="HB-thumbnail" src="./images/holidayblend.jpg" alt="Holiday Blend">
-              <p class="productListing">Holiday Blend</p>
-            </button>
+
           </div>
 
           <div class="grid-child-thumbnail">
-            <button onclick="displayRCP()" id="RCP">
+            <button onclick="displayRCP()" id="RCP"></button>
               <img id="RCP-thumbnail" src="./images/reindeercakepop.jpg" alt="Reindeer
               Cake Pop">
-              <p class="productListing">Reindeer Cake Pop</p>
-              </button>
             </div>
           </div>
         </section>
       </section>
       <section id="gameplay">
-        <h2 id="h2">GIVEAWAY</h2>
+        <h2 class="white-text">GIVEAWAY</h2>
         <div class="grid-container-gameplay"><!--CONTAINER START-->
           <div class="grid-child-gameplay-playarea"><!--GRIDCHILDPLAYAREA START-->
             <p>We're feeling generous this holiday season!<br><br>
@@ -130,10 +124,9 @@
               <!--Depending if the user got the number right, I think these will need hidden classes and I think the class gets deleted or added depending if they got the number right-->
               
               <span id="winOrLoseMessage"></span>
-              <!--Yay! Congrats! You've just won a free
-                drink of your choice!Aw. Try again next time.
-                <p>Please log into your Starbucks account
+              <!--<p>Please log into your Starbucks account
                   to redeem this offer!</p>-->
+
 
                 </div><!--GRIDCHILDPLAYAREA END-->
 
@@ -154,38 +147,28 @@
                       </div><!--CONTAINER END-->
                     </section>
                     <section id="contact">
-                      <h2 id="h2">CONTACT US</h2>
+                      <h2 class="white-text">CONTACT US</h2>
                       <div class="grid-container-form"><!--FORM CONTAINER START-->
                         <div class="grid-child-form"><!--GRID CHILD FORM START-->
                           <form>
-                            <label for="myName">Full Name<span class="required">*</span></label>
-                            <input type="text" name="myName" id="myName" autocomplete="name" required>
+                            <label for="fullName">Full Name<span class="required">*</span></label>
+                            <input type="text" name="fullName" id="fullName" autocomplete="name" required>
 
                             <!--Depending on user's contact method preference, email or phone will be required-->
 
-                            <label for="myPhone">Phone<span class="required">*</span></label>
-                            <input type="tel" name="myPhone" id="myPhone" autocomplete="tel" required>
+                            <label for="phoneNumber">Phone<span class="required">*</span></label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" autocomplete="tel" required>
 
-                            <label for="myEmail">Email<span class="required">*</span></label>
-                            <input type="email" name="myEmail" id="myEmail" autocomplete="email" required>
+                            <label for="emailAddress">Email<span class="required">*</span></label>
+                            <input type="email" name="emailAddress" id="emailAddress" autocomplete="email" required>
 
                             <fieldset>
-                              <legend>Preffered Method of Contact: <span class="required">*</span></legend>
-                              <label for="phone" class="radio">
-                                <span class="radio_input">
-                                  <input type="radio" name="contactMethod" id="phone" required checked>
-                                  <span class="radio_control"></span>
-                                </span>
-                                <span class="radio_label">Phone</span>
-                              </label>
-                              <label for="email" class="radio">
-                                <span class="radio_input">
-                                  <input type="radio" name="contactMethod" id="email" required>
-                                  <span class="radio_control"></span>
-                                </span>
-                                <span class="radio_label">Email</span>
-                              </label>
-                            </fieldset><span id="food"></span>
+                              <legend>Preffered Contact Method<span class="required">*</span></legend>
+                            <input type="radio" name="contactPref" id="prefPhone" required checked>
+                            <label for="prefPhone">Phone</label>
+                            <input type="radio" name="contactPref" id="prefEmail" required>
+                              <label for="prefEmail">Email</label>
+                              </fieldset>
                             <label for="myMessage">Comments<span class="required">*</span></label>
                             <textarea id="myMessage" required></textArea>
                               <input type="submit" name="mySubmit" id="mySubmit">
