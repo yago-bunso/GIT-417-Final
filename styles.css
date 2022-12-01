@@ -107,13 +107,13 @@ h1{
     text-transform: uppercase;
 }
 
-.hide{
+.pass-validation{
     visibility: hidden;
     height: 0px;
     padding: 0px;
 }
 
-nav h2.hide {
+nav h2.pass-validation {
     padding-bottom: 65px;
 }
 
@@ -200,12 +200,12 @@ main h2 {
     border-radius: 50px;
 }
 
-.grid-child-element-paragraph {
+#grid-child-element-paragraph {
     padding-top: 20px;
     width: 355px;
     font-size: 1.5rem;
 }
-.grid-child-element-paragraph {
+#grid-child-element-paragraph {
     padding-top: 20px;
     width: 355px;
     font-size: 1.5rem;

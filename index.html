@@ -18,7 +18,7 @@
     <a href="https://www.starbucks.com/"  aria-label="visit the official starbucks website" id="logo"><img src="./images/starbuckslogo.png" alt="the starbucks logo depicts a siren in white on a green background"></a>
     <h1>Starbucks</h1>
     <nav>
-      <h2 class="hide">Main Navigation</h2><!--this gets hidden in the CSS-->
+      <h2 class="pass-validation">Main Navigation</h2><!--this gets hidden in the CSS-->
       <ul>
         <li><a href="#products">Products</a></li>
         <li><a href="#gameplay">Giveaway</a></li>
@@ -36,18 +36,24 @@
       <section id="products">
         <div class="grid-container-element">
           <div class="grid-child-element-description">
+
+            <div id="product-h3">
             <h3 id="CBL-h3">Caramel Brulée Latte</h3>
             <!--<h3 id="PHC-h3" class="hidden">Peppermint Hot Chocolate</h3>-->
             <!--<h3 id="TWCMF-h3" class="hidden">Toasted White Chocolate Mocha Frappuccino</h3>-->
             <!--<h3 id="HB" class="hidden">Holiday Blend</h3>-->
             <!--<h3 id="RCP" class="hidden">Reindeer Cake Pop</h3>-->
-
+          </div>
+          
+          <div id="product-nutrition">
             <p id="CBL-nutrition">410 calories, 48g sugar, 14g fat</p>
             <!--<p id="PHC-nutrition" class="hidden">440 calories, 56g sugar, 16g fat</p>-->
             <!--<p id="TWCMF-nutrition" class="hidden">420 calories, 64g sugar, 16g fat</p>-->
             <!--<p id="RCP-nutrition" class="hidden">40 calories, 14g sugar, 7g fat</p>-->
-            <div class="grid-child-element-paragraph">
-             
+            </div>
+
+            <div id="grid-child-element-paragraph">
+            
               <p id="CBL-desc">Our signature espresso, steamed milk and rich caramel brulée sauce finished with
               whipped cream and a supreme topping of even more caramel brulée bits.</p>
               <!--<p id="PHC-desc" class="hidden">A big welcome back to our classic holiday hot chocolate—lovingly made with chocolaty mocha sauce, peppermint-flavored syrup and steamed milk and sweetly topped with whipped cream and dark-chocolate curls.</p>--> 
@@ -65,10 +71,7 @@
           </div>
         </div>
 
-  <!--Possibly make this a separate section for the product display buttons-->
-  <!--Going to try to see how figures work in this section-->
-  <!--the images need their own class for this section bc they need corner radius and possibly need to be masked or scaled up in size-->
-  <h2 class="hide">Products</h2><!--this gets hidden in the CSS-->
+  <h2 class="pass-validation">Products</h2>
   <div class="grid-container-thumbnails">
     <div class="grid-child-thumbnail">
       <figure id="one">
