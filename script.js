@@ -82,7 +82,27 @@ function displayPHC(){
         })
         }
     
-function gamePlay {
+function gamePlay() {
 let num1 = document.getElementById("num1");
 let num2 = document.getElementById("num2");
+let gameMessage = document.getElementById("winOrLoseMessage");
+
+let die1 = getRandomNumber(1,10);
+
+num1.innerHTML = die1;
+
+let seeMinandMax = function(number)
+{
+	if(number < 10, number > 1 ){
+		return number + " is less than 100";
+	}else{
+		return number + " is 100 or greater"
+	}
+}
+if(num1.value == num2.value){
+
+  gameMessage.innerHTML = "Yay! Congrats! You've just won a free drink of your choice!";
+}else{
+  gameMessage.innerHTML = "Aw. Try Again Nexttime.";
+}
 }
