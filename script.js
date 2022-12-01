@@ -7,15 +7,21 @@ function darkMode() {
   let h2 = document.getElementById("h2");
   h2.classList.toggle("dark-mode-h2");
 
+
+
+
+
   let button = document.getElementById("toggleButton");
   if (button.innerHTML === "Dark mode"){
     button.innerHTML = "Light mode";
-    button.classList.toggle("lightBtn");
-    button.classList.remove("darkBtn");
+    button.style.removeProperty("background-color");
+    button.style.setProperty("background-color", "var(--yellow)")
+    button.style.setProperty("color", "black");
   }else{
     button.innerHTML = "Dark mode";
-    button.classList.toggle("darkBtn");
-    button.classList.remove("lightBtn")
+    button.style.setProperty("background-color", "var(--blue)");
+    button.style.setProperty("color", "white");
+
   }
 }
 
